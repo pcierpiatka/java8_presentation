@@ -19,7 +19,6 @@ public class CarListAssertion extends AbstractAssert<CarListAssertion, List<? ex
         return new CarListAssertion(actual);
     }
 
-
     public CarListAssertion containsOnlyModel(String expected) {
         contains(car -> expected.equalsIgnoreCase(car.getModel()) ,"There should be only %s model but there are %s ", expected );
         return this;

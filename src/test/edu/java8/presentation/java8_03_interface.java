@@ -40,7 +40,6 @@ public class java8_03_interface {
 
     }
 
-
     private interface Male {
         default String sex() {
             return "Male";
@@ -84,7 +83,6 @@ public class java8_03_interface {
         //then
         assertThat(destination).isEqualTo("One Ring to rule them all.");
     }
-
 
     private interface Beer {
         default String name() {

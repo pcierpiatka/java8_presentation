@@ -86,9 +86,9 @@ public class java8_04_stream {
                 car().withManufacturer("Opel").withModel("Vectra").withYear(2012).withPrice("35000").build()
         );
         //when
-        Map<BigDecimal, String> customCollector = cars.stream().collect(Collectors.toMap(Car::getPrice, car -> car.getManufacturer() + " " + car.getModel()));
+        Map<BigDecimal, String> customCollector = cars.stream()
+                .collect(Collectors.toMap(Car::getPrice, car -> car.getManufacturer() + " " + car.getModel()));
         //then
-
         Assertions.assertThat(customCollector)
                 .containsEntry(new BigDecimal("15000"), "Opel Astra")
                 .containsEntry(new BigDecimal("25000"), "Opel Astra")

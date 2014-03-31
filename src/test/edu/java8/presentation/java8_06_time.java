@@ -84,7 +84,7 @@ public class java8_06_time {
         //when
         String format = localDateTime.format(DateTimeFormatter.ofPattern("mm-yyyy-dd mm:HH"));
         //then
-        Assertions.assertThat("03-2014-31 30:16");
+        Assertions.assertThat(format).isEqualTo("03-2014-31 30:16");
     }
 
 }

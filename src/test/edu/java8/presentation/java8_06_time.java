@@ -1,16 +1,13 @@
 package edu.java8.presentation;
 
-import edu.java8.presentation.assertion.DateAssertion;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 
 import static edu.java8.presentation.assertion.DateAssertion.assertThat;
-import static java.time.temporal.TemporalAdjuster.*;
 
 public class java8_06_time {
 
